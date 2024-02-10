@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+
+<body>
+    <div id="textbox">
+    </div>
+    <button onclick="btnClick(this)">Da</button>
+    <button onclick="btnClick(this)">hørte</button>
+    <button onclick="btnClick(this)">jeg</button>
+    <button onclick="btnClick(this)">fra</button>
+    <button onclick="btnClick(this)">lien</button>
+    <button onclick="btnClick(this)">en</button>
+    <button onclick="btnClick(this)">gjøk</button>
+    <button onclick="btnClick(this)">som</button>
+    <button onclick="btnClick(this)">sa</button>
+    <button onclick="btnClick(this)">ko-ko.</button>
+
+    <script>
+    let letter = 'Skriv ferdig denne: Jeg gikk en tur på stien og følte skoens ro.';
+        updateView()
+
+        function updateView() {
+            document.getElementById('textbox').innerHTML += /*HTML*/`
+                ${letter}
+                
+                `;
+        }
+        function btnClick(letters) {
+            letter = letters.innerHTML;
+            updateView()
+
+        }
+        
+
+    </script>
+
+    <style>
+       
+        body {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        #textbox {
+            width: 400px;
+            height: 200px;
+            border: solid 1px;
+            padding: 0px;
+          
+            
+        }
+    </style>
+</body>
+
+</html>
